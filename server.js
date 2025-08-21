@@ -16,7 +16,7 @@ const PORT = process.env.PORT || 5000;
 // --- Middleware ---
 // Allow requests specifically from your Netlify site
 app.use(cors({
-  origin: 'https://codeandquill.netlify.app' 
+  origin: 'https://subtle-paprenjak-0f9ca9.netlify.app/' 
 }));
 app.use(express.json());
 
@@ -70,4 +70,5 @@ app.post('/api/posts', async (req, res) => {
 // --- Start the Server ---
 app.listen(PORT, () => {
     console.log(`>>> Server is running on http://localhost:${PORT}`);
+
 });
